@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+            xmlns:credentials="clr-namespace:IdentifyMe.View.Credentials;assembly=IdentifyMe"
+             xmlns:profile="clr-namespace:IdentifyMe.View.Profile;assembly=IdentifyMe"
+             xmlns:connections="clr-namespace:IdentifyMe.View.Connections;assembly=IdentifyMe"
+             xmlns:notification="clr-namespace:IdentifyMe.View.Notification;assembly=IdentifyMe"
+             xmlns:setting="clr-namespace:IdentifyMe.View.Setting;assembly=IdentifyMe"
+            xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="IdentifyMe.View.BottomAppShell">
+    <TabBar >
+        <Tab Icon="check_circle.png"
+            Title="Credentials"
+             
+            >
+            <ShellContent>
+                <credentials:Credentials />
+            </ShellContent>
+        </Tab>
+        <Tab Icon="user.png"
+            Title="Profile">
+            <ShellContent>
+                <profile:Profile />
+            </ShellContent>
+        </Tab>
+        <Tab Icon="users.png"
+            Title="Connection"
+            >
+            <ShellContent>
+                <connections:Connections />
+            </ShellContent>
+        </Tab>
+        <Tab Icon="Notification.png"
+            Title="Notification" >
+            <ShellContent>
+                <notification:Notification />
+            </ShellContent>
+        </Tab>
+        <Tab Icon="Setting.png"
+            Title="Credentials" >
+            <ShellContent>
+                <setting:Setting />
+            </ShellContent>
+        </Tab>
+    </TabBar>
+</Shell>
